@@ -1,2 +1,20 @@
 // Mixins in here
 
+.btn-styler() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;        
+    background-color: lighten(teal, 2%);
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    width: 85%;
+    font-size: 1.6rem;
+    transition: background-color 0.20s;
+  
+    &:hover {
+      background-color: darken(teal, 3%);
+      cursor: pointer;
+    }
+  }
