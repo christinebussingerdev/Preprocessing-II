@@ -2,9 +2,18 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1.5px dashed lightgray;
+
+    .constraint-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+    }
 
     h1.logo {
         width: 100%;
