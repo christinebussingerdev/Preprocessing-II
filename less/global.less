@@ -39,8 +39,18 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    padding: 0px 20px;
+    width: 95%;
+  }
 }
