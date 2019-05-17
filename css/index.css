@@ -190,6 +190,7 @@ header {
     justify-content: center;
     padding: 0px 20px;
     width: 95%;
+    margin-top: 20px;
   }
 }
 header .constraint-wrapper {
@@ -226,6 +227,11 @@ header nav {
 header nav:hover {
   color: red;
 }
+@media ( max-width: 500px ) {
+  header nav {
+    height: 60px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -251,12 +257,27 @@ header nav:hover {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-section {
+    flex-direction: column;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -270,12 +291,22 @@ header nav:hover {
   padding-right: 1%;
   padding-left: 0;
 }
+@media ( max-width: 500px ) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -299,8 +330,21 @@ header nav:hover {
   width: 85%;
   font-size: 1.6rem;
   transition: background-color 0.2s;
+  width: 100%;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #007171;
   cursor: pointer;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0px 4%;
+    margin-bottom: 30px;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-pick {
+    flex-direction: column;
+  }
 }
